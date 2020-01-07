@@ -5,11 +5,14 @@ public class User {
     private String name;
     private Address address;
     private String phoneNumber;
+    private int age;
 
     public User(String name, Address address, String phoneNumber) {
         this.name = name;
-        this.address = new Address( "Edmonton", "Canada");
+        this.age = age;
+        this.address = new Address("Edmonton", "Canada");
         this.phoneNumber = phoneNumber;
+
     }
 
 
@@ -21,6 +24,9 @@ public class User {
         this.name = name;
     }
 
+    public int getAge() { return age; }
+
+    public void setAge(int age) { this.age = age; }
 
     public Address getAddress() {
         return address;
@@ -37,4 +43,6 @@ public class User {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+
 }
+
